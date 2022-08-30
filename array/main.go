@@ -33,3 +33,10 @@ func (a *array) shiftIndexBack(index int) {
 	}
 	delete(a.data, a.length-1)
 }
+
+func (a *array) shiftIndexForward(index int) {
+	for i := a.length; i > index; i-- {
+		a.data[i] = a.data[i-1]
+	}
+	a.length++
+}
