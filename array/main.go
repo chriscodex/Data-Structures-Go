@@ -13,3 +13,8 @@ func Constructor() array {
 		data:   map[int]any{},
 	}
 }
+
+// Get value by index
+func (a *array) Get(index int) any {
+	return a.data[index]
+}
