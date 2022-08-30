@@ -73,3 +73,10 @@ func (a *array) AddBegin(element any) any {
 	a.data[0] = element
 	return element
 }
+
+// Add element at any index
+func (a *array) AddElement(element any, index int) any {
+	a.shiftIndexForward(index)
+	a.data[index] = element
+	return element
+}
