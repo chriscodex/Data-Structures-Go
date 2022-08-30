@@ -25,3 +25,11 @@ func (a *array) Append(item any) map[int]any {
 	a.length++
 	return a.data
 }
+
+/* Auxiliar Methods */
+func (a *array) shiftIndexBack(index int) {
+	for i := index; i < a.length-1; i++ {
+		a.data[i] = a.data[i+1]
+	}
+	delete(a.data, a.length-1)
+}
