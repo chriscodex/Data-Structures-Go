@@ -57,3 +57,12 @@ func (a *array) DeleteLastElement() any {
 	a.length--
 	return element
 }
+
+// Delete element by index
+func (a *array) Delete(index int) any {
+	element := a.data[index]
+	delete(a.data, index)
+	a.shiftIndexBack(index)
+	a.length--
+	return element
+}
