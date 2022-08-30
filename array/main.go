@@ -49,3 +49,11 @@ func (a *array) DeleteFirstElement() any {
 	a.length--
 	return element
 }
+
+// Delete the last element, return the element eliminated
+func (a *array) DeleteLastElement() any {
+	element := a.data[a.length-1]
+	delete(a.data, a.length-1)
+	a.length--
+	return element
+}
