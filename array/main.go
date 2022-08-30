@@ -66,3 +66,10 @@ func (a *array) Delete(index int) any {
 	a.length--
 	return element
 }
+
+// Add element at the beginning
+func (a *array) AddBegin(element any) any {
+	a.shiftIndexForward(0)
+	a.data[0] = element
+	return element
+}
