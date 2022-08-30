@@ -18,3 +18,10 @@ func Constructor() array {
 func (a *array) Get(index int) any {
 	return a.data[index]
 }
+
+// Add an element at the last of the array
+func (a *array) Append(item any) map[int]any {
+	a.data[a.length] = item
+	a.length++
+	return a.data
+}
