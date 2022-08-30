@@ -40,3 +40,12 @@ func (a *array) shiftIndexForward(index int) {
 	}
 	a.length++
 }
+
+// Delete the first element
+func (a *array) DeleteFirstElement() any {
+	element := a.data[0]
+	delete(a.data, 0)
+	a.shiftIndexBack(0)
+	a.length--
+	return element
+}
