@@ -26,3 +26,9 @@ func (h *HashTable) set(key string, value string) [][][]string {
 	h.data[address] = append(h.data[address], []string{key, value})
 	return h.data
 }
+
+// Auxiliar Method
+func remove(s [][]string, i int) [][]string {
+	s[i] = s[len(s)-1]
+	return s[:len(s)-1]
+}
