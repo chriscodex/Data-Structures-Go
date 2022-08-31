@@ -27,12 +27,6 @@ func (h *HashTable) set(key string, value string) [][][]string {
 	return h.data
 }
 
-// Auxiliar Method
-func remove(s [][]string, i int) [][]string {
-	s[i] = s[len(s)-1]
-	return s[:len(s)-1]
-}
-
 // Get Method
 func (h *HashTable) get(key string) string {
 	address := h.hashMethod(key)
@@ -45,4 +39,23 @@ func (h *HashTable) get(key string) string {
 		}
 	}
 	return ""
+}
+
+// Auxiliar Method
+func remove(s [][]string, i int) [][]string {
+	s[i] = s[len(s)-1]
+	return s[:len(s)-1]
+}
+
+// Delete Method
+func (h *HashTable) delete(key string) {
+	address := h.hashMethod(key)
+	currentBucket := h.data[address]
+	if currentBucket != nil {
+		for i := 0; i < len(currentBucket); i++ {
+			if currentBucket[i][0] == key {
+				h.data[address] = remove(currentBucket, i)
+			}
+		}
+	}
 }
