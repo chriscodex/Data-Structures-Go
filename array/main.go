@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /* Array structure */
 type array struct {
 	length int
@@ -79,4 +81,21 @@ func (a *array) AddElement(element any, index int) any {
 	a.shiftIndexForward(index)
 	a.data[index] = element
 	return element
+}
+
+func main() {
+	myArray := Constructor()
+	myArray.Append(0)
+	myArray.Append(1)
+	myArray.Append(2)
+	myArray.DeleteLastElement()
+	for i := 0; i < myArray.length; i++ {
+		fmt.Println(myArray.Get(i))
+	}
+	myArray.Append(2)
+	myArray.Append(3)
+	myArray.Append(4)
+	fmt.Println(myArray)
+	myArray.AddElement(5, 2)
+	fmt.Println(myArray)
 }
