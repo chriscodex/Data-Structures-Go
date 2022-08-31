@@ -19,3 +19,10 @@ func (h *HashTable) hashMethod(key string) int {
 	}
 	return hash
 }
+
+// Set Method
+func (h *HashTable) set(key string, value string) [][][]string {
+	address := h.hashMethod(key)
+	h.data[address] = append(h.data[address], []string{key, value})
+	return h.data
+}
