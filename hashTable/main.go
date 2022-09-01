@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 type HashTable struct {
 	data [][][]string
 }
@@ -58,4 +62,37 @@ func (h *HashTable) delete(key string) {
 			}
 		}
 	}
+}
+
+// Get All Keys
+func (h *HashTable) getAllKeys() []string {
+	keys := []string{}
+	for i := 0; i < len(h.data); i++ {
+		if h.data[i] != nil {
+			if len(h.data[i]) == 1 {
+				keys = append(keys, h.data[i][0][0])
+			} else {
+				for j := 0; j < len(h.data[i]); j++ {
+					keys = append(keys, h.data[i][j][0])
+				}
+			}
+		}
+	}
+	return keys
+}
+
+func main() {
+	myHashTable := NewHashTable(5)
+	fmt.Println(myHashTable)
+	myHashTable.set("Christian", "1998")
+	myHashTable.set("Heber", "1961")
+	myHashTable.set("Leo", "1994")
+	myHashTable.set("Gian", "1931")
+	myHashTable.set("Rodolfo", "1991")
+	fmt.Println(myHashTable)
+	t := myHashTable.get("Christian")
+	fmt.Println(t)
+	fmt.Println(myHashTable)
+	ak := myHashTable.getAllKeys()
+	fmt.Println(ak)
 }
