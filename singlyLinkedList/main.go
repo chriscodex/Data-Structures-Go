@@ -44,8 +44,13 @@ func (sll *SinglyLinkedList) AddNodeEnd(node *Node) {
 }
 
 func (sll *SinglyLinkedList) AddNodeBeggin(node *Node) {
-	node.next = sll.head
-	sll.head = node
+	if sll.head == nil {
+		sll.head = node
+		sll.tail = node
+	} else {
+		node.next = sll.head
+		sll.head = node
+	}
 }
 
 func (sll *SinglyLinkedList) AddNodeSpecify(node *Node, position int) {
