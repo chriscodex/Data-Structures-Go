@@ -43,3 +43,8 @@ func (sll *SinglyLinkedList) AddNodeEnd(node *Node) {
 	sll.tail.next = node
 	sll.tail = node
 }
+
+func (sll *SinglyLinkedList) AddNodeBeggin(node *Node) {
+	node.next = sll.head
+	sll.head = node
+}
