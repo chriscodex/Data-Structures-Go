@@ -13,14 +13,8 @@ type SinglyLinkedList struct {
 }
 
 // Singly Linked List constructor
-func NewSinglyLinkedList(data int) *SinglyLinkedList {
-	n := Node{
-		data: data,
-	}
-	return &SinglyLinkedList{
-		head: &n,
-		tail: &n,
-	}
+func NewSinglyLinkedList() *SinglyLinkedList {
+	return &SinglyLinkedList{}
 }
 
 // Node constructor
@@ -40,8 +34,13 @@ func (sll *SinglyLinkedList) Traversal() {
 }
 
 func (sll *SinglyLinkedList) AddNodeEnd(node *Node) {
-	sll.tail.next = node
-	sll.tail = node
+	if sll.head == nil {
+		sll.head = node
+		sll.tail = node
+	} else {
+		sll.tail.next = node
+		sll.tail = node
+	}
 }
 
 func (sll *SinglyLinkedList) AddNodeBeggin(node *Node) {
@@ -64,7 +63,7 @@ func (sll *SinglyLinkedList) AddNodeSpecify(node *Node, position int) {
 }
 
 func main() {
-	slink := NewSinglyLinkedList(1)
+	slink := NewSinglyLinkedList()
 	n2 := NewNode(2)
 	n3 := NewNode(0)
 	n4 := NewNode(3)
@@ -74,7 +73,7 @@ func main() {
 	slink.AddNodeSpecify(n4, 1)
 	slink.AddNodeSpecify(n5, 0)
 	slink.Traversal()
-	for i := 0; i < 0; i++ {
-		fmt.Println(i)
-	}
+	// for i := 0; i < 0; i++ {
+	// 	fmt.Println(i)
+	// }
 }
