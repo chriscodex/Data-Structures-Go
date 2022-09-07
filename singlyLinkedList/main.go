@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Node struct {
 	data int
 	next *Node
@@ -18,5 +20,21 @@ func NewSinglyLinkedList(data int) *SinglyLinkedList {
 	return &SinglyLinkedList{
 		head: &n,
 		tail: &n,
+	}
+}
+
+// Node constructor
+func NewNode(data int) *Node {
+	return &Node{
+		data: data,
+	}
+}
+
+// Methods
+func (sll *SinglyLinkedList) Traversal() {
+	pointer := sll.head
+	for pointer != nil {
+		fmt.Println(pointer.data)
+		pointer = pointer.next
 	}
 }
