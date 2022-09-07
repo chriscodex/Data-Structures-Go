@@ -62,3 +62,19 @@ func (sll *SinglyLinkedList) AddNodeSpecify(node *Node, position int) {
 		sll.AddNodeBeggin(node)
 	}
 }
+
+func main() {
+	slink := NewSinglyLinkedList(1)
+	n2 := NewNode(2)
+	n3 := NewNode(0)
+	n4 := NewNode(3)
+	n5 := NewNode(5)
+	slink.AddNodeEnd(n2)
+	slink.AddNodeBeggin(n3)
+	slink.AddNodeSpecify(n4, 1)
+	slink.AddNodeSpecify(n5, 0)
+	slink.Traversal()
+	for i := 0; i < 0; i++ {
+		fmt.Println(i)
+	}
+}
