@@ -78,7 +78,4 @@ func main() {
 	slink.AddNodeSpecify(n4, 1)
 	slink.AddNodeSpecify(n5, 0)
 	slink.Traversal()
-	// for i := 0; i < 0; i++ {
-	// 	fmt.Println(i)
-	// }
 }
