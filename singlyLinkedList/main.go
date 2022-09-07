@@ -38,3 +38,8 @@ func (sll *SinglyLinkedList) Traversal() {
 		pointer = pointer.next
 	}
 }
+
+func (sll *SinglyLinkedList) AddNodeEnd(node *Node) {
+	sll.tail.next = node
+	sll.tail = node
+}
