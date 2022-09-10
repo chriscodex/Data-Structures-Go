@@ -13,4 +13,5 @@ type SinglyLinkedList struct {
 
 // Singly Linked List Constructor
 func NewSinglyLinkedList() *SinglyLinkedList {
+	return &SinglyLinkedList{}
 }
