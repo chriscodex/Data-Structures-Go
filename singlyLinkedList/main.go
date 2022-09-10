@@ -15,3 +15,7 @@ type SinglyLinkedList struct {
 func NewSinglyLinkedList() *SinglyLinkedList {
 	return &SinglyLinkedList{}
 }
+
+func NewNode(data int) *Node {
+
+}
