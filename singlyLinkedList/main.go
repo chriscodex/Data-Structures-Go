@@ -5,4 +5,5 @@ type Node struct {
 	next *Node
 }
 
-type SinglyLinkedList struct{}
+type SinglyLinkedList struct {
+}
