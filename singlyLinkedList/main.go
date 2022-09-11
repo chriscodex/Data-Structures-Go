@@ -8,4 +8,5 @@ type Node struct {
 type SinglyLinkedList struct {
 	head   *Node
 	length int
+	tail   *Node
 }
