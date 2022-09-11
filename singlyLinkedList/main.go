@@ -6,4 +6,5 @@ type Node struct {
 }
 
 type SinglyLinkedList struct {
+	head *Node
 }
