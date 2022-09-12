@@ -17,5 +17,7 @@ func NewSinglyLinkedList() *SinglyLinkedList {
 }
 
 func NewNode(data int) *Node {
-	return &Node{}
+	return &Node{
+		data: data,
+	}
 }
