@@ -11,5 +11,6 @@ type SinglyLinkedList struct {
 	length int
 }
 
+// Singly Linked List Constructor
 func NewSinglyLinkedList() *SinglyLinkedList {
 }
