@@ -10,3 +10,6 @@ type SinglyLinkedList struct {
 	tail   *Node
 	length int
 }
+
+func NewSinglyLinkedList() *SinglyLinkedList {
+}
