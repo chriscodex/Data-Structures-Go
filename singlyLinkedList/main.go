@@ -27,5 +27,6 @@ func NewNode(data int) *Node {
 /*Methods*/
 // Traverse the list
 func (sll *SinglyLinkedList) Traversal() {
+	pointer := sll.head
 
 }
