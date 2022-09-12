@@ -25,4 +25,4 @@ func NewNode(data int) *Node {
 }
 
 /*Methods*/
-//
+// Traverse the list
