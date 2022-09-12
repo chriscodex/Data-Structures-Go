@@ -11,6 +11,7 @@ type SinglyLinkedList struct {
 	length int
 }
 
+/* Constructors */
 // Singly Linked List Constructor
 func NewSinglyLinkedList() *SinglyLinkedList {
 	return &SinglyLinkedList{}
@@ -22,3 +23,6 @@ func NewNode(data int) *Node {
 		data: data,
 	}
 }
+
+/*Methods*/
+//
