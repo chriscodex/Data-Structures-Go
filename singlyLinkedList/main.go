@@ -32,6 +32,6 @@ func (sll *SinglyLinkedList) Traversal() {
 	pointer := sll.head
 	for pointer != nil {
 		fmt.Println(pointer.data)
-
+		pointer = pointer.next
 	}
 }
