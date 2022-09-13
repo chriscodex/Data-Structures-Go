@@ -35,3 +35,5 @@ func (sll *SinglyLinkedList) Traversal() {
 		pointer = pointer.next
 	}
 }
+
+// Add a node at the end of the list
