@@ -38,4 +38,5 @@ func (sll *SinglyLinkedList) Traversal() {
 
 // Add a node at the end of the list
 func (sll *SinglyLinkedList) AddNodeEnd(data int) {
+	node := NewNode(data)
 }
