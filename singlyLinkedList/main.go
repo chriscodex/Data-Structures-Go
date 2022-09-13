@@ -42,5 +42,6 @@ func (sll *SinglyLinkedList) AddNodeEnd(data int) {
 	if sll.head == nil {
 		sll.head = node
 		sll.tail = node
+	} else {
 	}
 }
