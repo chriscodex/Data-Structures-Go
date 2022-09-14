@@ -47,3 +47,6 @@ func (sll *SinglyLinkedList) AddNodeEnd(data int) {
 		sll.tail = node
 	}
 }
+
+func (sll *SinglyLinkedList) AddNodeBeggin(data int) {
+}
