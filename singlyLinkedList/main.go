@@ -55,5 +55,6 @@ func (sll *SinglyLinkedList) AddNodeBeggin(data int) {
 		sll.tail = node
 	} else {
 		node.next = sll.head
+		sll.head = node
 	}
 }
