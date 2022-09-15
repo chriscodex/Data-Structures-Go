@@ -67,4 +67,5 @@ func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 		sll.AddNodeBeggin(node.data)
 	} else {
 	}
+	sll.length++
 }
