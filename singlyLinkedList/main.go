@@ -62,5 +62,5 @@ func (sll *SinglyLinkedList) AddNodeBeggin(data int) {
 }
 
 func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
-
+	node := NewNode(data)
 }
