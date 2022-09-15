@@ -68,6 +68,7 @@ func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 	} else {
 		pointer := sll.head
 		for i := 0; i < position-1; i++ {
+			pointer = pointer.next
 		}
 	}
 	sll.length++
