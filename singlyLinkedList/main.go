@@ -66,6 +66,7 @@ func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 	if position == 0 {
 		sll.AddNodeBeggin(node.data)
 	} else {
+		pointer := sll.head
 	}
 	sll.length++
 }
