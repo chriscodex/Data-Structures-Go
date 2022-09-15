@@ -60,3 +60,7 @@ func (sll *SinglyLinkedList) AddNodeBeggin(data int) {
 	}
 	sll.length++
 }
+
+func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
+
+}
