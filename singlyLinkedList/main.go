@@ -61,6 +61,7 @@ func (sll *SinglyLinkedList) AddNodeBeggin(data int) {
 	sll.length++
 }
 
+/* Add a node at a specific position */
 func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 	node := NewNode(data)
 	if position == 0 {
