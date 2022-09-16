@@ -80,4 +80,4 @@ func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 	sll.length++
 }
 
-/* Remove nodes to the list */
+/* Remove nodes from the list */
