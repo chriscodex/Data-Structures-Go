@@ -83,5 +83,6 @@ func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 /* Remove nodes from the list */
 // Remove head from list
 func (sll *SinglyLinkedList) RemoveHead() {
-
+	if sll.head == nil || sll.tail == nil {
+	}
 }
