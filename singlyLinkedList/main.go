@@ -27,6 +27,7 @@ func NewNode(data int) *Node {
 }
 
 /*Methods*/
+
 // Traverse the list
 func (sll *SinglyLinkedList) Traversal() {
 	pointer := sll.head
@@ -36,6 +37,7 @@ func (sll *SinglyLinkedList) Traversal() {
 	}
 }
 
+/* Add nodes to the list */
 // Add a node at the end of the list
 func (sll *SinglyLinkedList) AddNodeEnd(data int) {
 	node := NewNode(data)
