@@ -51,7 +51,7 @@ func (sll *SinglyLinkedList) AddNodeEnd(data int) {
 }
 
 /* Add a node at the top of the list */
-func (sll *SinglyLinkedList) AddNodeBeggin(data int) {
+func (sll *SinglyLinkedList) AddNodeTop(data int) {
 	node := NewNode(data)
 	if sll.head == nil {
 		sll.head = node
@@ -67,7 +67,7 @@ func (sll *SinglyLinkedList) AddNodeBeggin(data int) {
 func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 	node := NewNode(data)
 	if position == 0 {
-		sll.AddNodeBeggin(node.data)
+		sll.AddNodeTop(node.data)
 	} else {
 		pointer := sll.head
 		for i := 0; i < position-1; i++ {
