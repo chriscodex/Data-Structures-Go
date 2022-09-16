@@ -85,5 +85,6 @@ func (sll *SinglyLinkedList) AddNodeSpecify(data int, position int) {
 func (sll *SinglyLinkedList) RemoveHead() {
 	if sll.head == nil || sll.tail == nil {
 		fmt.Println("Nothing to delete")
+	} else {
 	}
 }
