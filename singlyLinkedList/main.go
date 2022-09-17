@@ -94,5 +94,6 @@ func (sll *SinglyLinkedList) RemoveHead() {
 			sll.head = temp.next
 			*temp = Node{}
 		}
+		sll.length--
 	}
 }
