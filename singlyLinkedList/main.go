@@ -97,3 +97,7 @@ func (sll *SinglyLinkedList) RemoveHead() {
 		sll.length--
 	}
 }
+
+func (sll *SinglyLinkedList) RemoveTail() {
+
+}
