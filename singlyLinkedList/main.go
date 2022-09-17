@@ -91,6 +91,7 @@ func (sll *SinglyLinkedList) RemoveHead() {
 			sll.tail = nil
 		} else {
 			temp := sll.head
+			sll.head = temp.next
 		}
 	}
 }
