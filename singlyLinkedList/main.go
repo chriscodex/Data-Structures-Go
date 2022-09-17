@@ -89,6 +89,7 @@ func (sll *SinglyLinkedList) RemoveHead() {
 		if sll.head == sll.tail {
 			sll.head = sll.tail.next
 			sll.tail = nil
+		} else {
 		}
 	}
 }
