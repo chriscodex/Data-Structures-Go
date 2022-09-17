@@ -100,5 +100,6 @@ func (sll *SinglyLinkedList) RemoveHead() {
 
 func (sll *SinglyLinkedList) RemoveTail() {
 	if sll.head == nil || sll.tail == nil {
+		fmt.Println("Nothing to delete")
 	}
 }
