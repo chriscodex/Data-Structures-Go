@@ -90,6 +90,7 @@ func (sll *SinglyLinkedList) RemoveHead() {
 			sll.head = sll.tail.next
 			sll.tail = nil
 		} else {
+			temp := sll.head
 		}
 	}
 }
