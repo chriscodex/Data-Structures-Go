@@ -103,6 +103,7 @@ func (sll *SinglyLinkedList) RemoveTail() {
 		fmt.Println("Nothing to delete")
 	} else {
 		if sll.head == sll.tail {
+			sll.head = sll.head.next
 		}
 	}
 }
