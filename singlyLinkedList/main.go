@@ -104,6 +104,7 @@ func (sll *SinglyLinkedList) RemoveTail() {
 	} else {
 		if sll.head == sll.tail {
 			sll.head = sll.head.next
+			sll.tail = nil
 		}
 	}
 }
