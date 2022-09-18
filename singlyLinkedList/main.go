@@ -110,6 +110,7 @@ func (sll *SinglyLinkedList) RemoveTail() {
 			for pointer.next.next != nil {
 				pointer = pointer.next
 			}
+			sll.tail = &Node{}
 		}
 	}
 }
