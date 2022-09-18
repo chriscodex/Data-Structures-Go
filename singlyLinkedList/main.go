@@ -108,6 +108,7 @@ func (sll *SinglyLinkedList) RemoveTail() {
 		} else {
 			pointer := sll.head
 			for pointer.next.next != nil {
+				pointer = pointer.next
 			}
 		}
 	}
