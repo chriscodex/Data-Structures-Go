@@ -127,5 +127,6 @@ func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 		for i := 0; i < position-1; i++ {
 			preDel = preDel.next
 		}
+		del := preDel.next
 	}
 }
