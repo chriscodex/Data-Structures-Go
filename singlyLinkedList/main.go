@@ -98,6 +98,7 @@ func (sll *SinglyLinkedList) RemoveHead() {
 	}
 }
 
+// Remove tail from the list
 func (sll *SinglyLinkedList) RemoveTail() {
 	if sll.head == nil || sll.tail == nil {
 		fmt.Println("Nothing to delete")
