@@ -118,3 +118,7 @@ func (sll *SinglyLinkedList) RemoveTail() {
 		sll.length--
 	}
 }
+
+func (sll *SinglyLinkedList) RemoveSpecify(position int) {
+
+}
