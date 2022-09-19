@@ -128,5 +128,7 @@ func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 			preDel = preDel.next
 		}
 		del := preDel.next
+		if del.next == nil {
+		}
 	}
 }
