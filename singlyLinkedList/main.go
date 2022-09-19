@@ -123,5 +123,6 @@ func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 	if position == 0 {
 		sll.RemoveHead()
 	} else {
+		preDel := sll.head
 	}
 }
