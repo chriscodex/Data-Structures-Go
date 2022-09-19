@@ -114,5 +114,6 @@ func (sll *SinglyLinkedList) RemoveTail() {
 			pointer.next = nil
 			sll.tail = pointer
 		}
+		sll.length--
 	}
 }
