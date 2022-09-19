@@ -120,5 +120,6 @@ func (sll *SinglyLinkedList) RemoveTail() {
 }
 
 func (sll *SinglyLinkedList) RemoveSpecify(position int) {
-
+	if position == 0 {
+	}
 }
