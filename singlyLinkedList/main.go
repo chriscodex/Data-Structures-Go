@@ -132,6 +132,7 @@ func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 			sll.RemoveTail()
 		} else {
 			aft := del.next
+			preDel.next = aft
 		}
 	}
 }
