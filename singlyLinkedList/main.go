@@ -143,4 +143,5 @@ func main() {
 	slink := NewSinglyLinkedList()
 	slink.AddNodeEnd(0)
 	slink.AddNodeEnd(1)
+	slink.AddNodeSpecify(2, 2)
 }
