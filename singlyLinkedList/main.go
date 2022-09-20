@@ -119,6 +119,7 @@ func (sll *SinglyLinkedList) RemoveTail() {
 	}
 }
 
+// Remove a specific node
 func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 	if position == 0 {
 		sll.RemoveHead()
