@@ -133,6 +133,7 @@ func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 		} else {
 			aft := del.next
 			preDel.next = aft
+			sll.length--
 		}
 	}
 }
