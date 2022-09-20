@@ -142,4 +142,5 @@ func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 func main() {
 	slink := NewSinglyLinkedList()
 	slink.AddNodeEnd(0)
+	slink.AddNodeEnd(1)
 }
