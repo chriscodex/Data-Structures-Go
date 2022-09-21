@@ -150,4 +150,5 @@ func main() {
 	slink.AddNodeEnd(1)
 	slink.AddNodeSpecify(2, 2)
 	slink.Traversal()
+	slink.DeleteSinglyLinkedList()
 }
