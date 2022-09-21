@@ -140,6 +140,7 @@ func (sll *SinglyLinkedList) RemoveSpecify(position int) {
 }
 
 func (sll *SinglyLinkedList) DeleteSinglyLinkedList() {
+	sll.head = nil
 }
 
 func main() {
